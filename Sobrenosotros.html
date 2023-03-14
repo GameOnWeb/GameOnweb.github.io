@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Galeria</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+    <style>
+    
+    #testimonios {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+#testimonios h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex: 1;
+  margin: 20px;
+  max-width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: #333;
+}
+
+.flip-card-back {
+  background-color: #333;
+  color: #fff;
+    height: auto;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  font-size: 1vw;
+  padding: 5% ;
+}
+    
+    
+
+    </style>
+    <header>
+        <a id="icon-cont" href="index.html">
+     
+        <img id="logo" src="img/Logo-removebg-preview.png" style=" width: 10%; left: -1.5% ">
+        <p id="logo-text">
+           	<span style="--delay: 0;">G</span>
+		<span style="--delay: 1;">A</span>
+		<span style="--delay: 2;">M</span>
+		<span style="--delay: 3;">E</span>
+		<span style="--delay: 4;">-</span>
+		<span style="--delay: 5;">O</span>
+		<span style="--delay: 6;">N</span>
+            	
+	
+            
+            </p>
+     
+       
+
+
+        </a>
+<h1 class="subtitle">Sobre Nosotros</h1>
+
+    </header>
+    
+    <main>
+        
+        <p class="subtitle" style="width: 100%">Grupo "Tilines" esta conformado por:</p>
+            
+            
+            
+ 
+        <center>
+      <section id="testimonios">
+  <h2 style="color: black">Desarrolladores</h2>
+  <div class="row">
+    <div class="col">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Joshua Aguillon Cetina</h3>
+            <img src="https://img.freepik.com/vector-gratis/diseno-web-produccion-mantenimiento-sitios-web-grafico-web-diseno-interfaz-sitio-web-receptivo-ingenieria-software-desarrollo-colorido-icono_335657-2699.jpg" alt="Foto de Josh" width="80%">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="subtitle" style="font-size: 1vw">Encargado de:</h1>
+     
+              <p class="sub-text">*Programacion de la Pagina</p>
+                             <p class="sub-text">*Cracion del Prototipo del juego</p>
+        
+                <p class="sub-text">*Coordinacion General</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+                 <h3>Vanessa Baez Padilla</h3>
+            <img src="img/vanessavtuber.jpeg" alt="Foto de Josh" width="100%">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="subtitle" style="font-size: 1vw">Encargada de:</h1>
+     
+              <p class="sub-text">*Obtencion Multimedia</p>
+                             <p class="sub-text">*creacion Multimedia</p>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+                 <h3>Adriel Rodriguez Pacheco</h3>
+            <img src="https://preview.redd.it/57iva7t9jcb81.png?auto=webp&s=88915e03ad7819d7a6516f56676aef84ffe2d769" alt="Foto de Josh" width="100%" height="50%">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="subtitle" style="font-size: 1vw">Encargado de:</h1>
+     
+              <p class="sub-text">*Recoleccion de informacion </p>
+                             <p class="sub-text">*Diseñador Grafico</p>
+        
+             
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+            <p>Nuestra misión es proveer a nuestros usuarios una experiencia única y emocionante en cada juego que ofrecemos, y estamos dispuestos a sacrificar horas de sueño para lograrlo. No te sorprendas si encuentras a nuestro equipo de desarrolladores en la oficina a altas horas de la noche, discutiendo estrategias para derrotar al jefe final de un juego o debatiendo acaloradamente sobre la mejor manera de implementar un Easter egg que haga reír a nuestros jugadores. ¡Nos encanta lo que hacemos, y esperamos que tú también disfrutes de nuestra página tanto como nosotros!</p>
+        </center>
+      
+    </main>
+</body>
+  
+</html>
